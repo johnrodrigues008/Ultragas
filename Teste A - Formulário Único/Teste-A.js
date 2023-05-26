@@ -11,26 +11,24 @@ function CardMob() {
       }
       var styles = `
             .wpforms-page.wpforms-page-1 {
-                  display: block!important;
+                  display: none!important;
             }
 
             .wpforms-page.wpforms-page-2 {
-                  display: block!important;
+                  display: none!important;
             }
 
             .wpforms-page.wpforms-page-3 {
-                  display: block!important;
+                  display: none!important;
             }
 
             .wpforms-page.wpforms-page-4.last {
-                  display: block!important;
+                  display: none!important;
             }
 
             .wpforms-submit-container {
-                  display: block!important;
+                  display: none!important;
             }
-
-
       `;
 
       addStyle(styles);
