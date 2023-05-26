@@ -1,5 +1,5 @@
 function CardMob() {
-
+      
       function addStyle(styles) {
             var css = document.createElement("style");
             css.type = "text/css";

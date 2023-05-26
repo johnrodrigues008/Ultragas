@@ -1,0 +1,634 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+      box-sizing: border-box;
+}
+
+body {
+      margin: 0;
+      padding: 0;
+      font-family: "Open Sans", sans-serif;
+}
+
+.navegacaoExemplo {
+      width: 100%;
+      height: 80px;
+      background: #000fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      color: #fff;
+      font-weight: 700;
+}
+
+.rck-section {
+      background-image: url(img/Plano-de-fundo-ultragaz.webp);
+      background-size: cover;
+      padding: 0 20px 20px;
+      color: #4e4e4e;
+      border: #909090;
+      height: 100vh;
+
+      .rck-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+
+            /* Texto Lateral */
+            .rck-box-text {
+                  color: #000fff;
+                  width: 100%;
+                  max-width: 500px;
+                  h2 {
+                        text-align: center;
+                        font-size: 20px;
+                        font-weight: 500;
+                        strong {
+                              font-weight: 700;
+                        }
+                  }
+
+                  ul {
+                        display: none;
+                  }
+            }
+
+            /* Etapa 1 */
+            .rck-box-form {
+                  background: #ffffff;
+                  color: #909090;
+                  padding: 5px 20px;
+                  border-radius: 23px;
+                  width: 100%;
+                  max-width: 500px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+
+                  h2 {
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #4e4e4e;
+
+                        strong {
+                              color: #000fff;
+                              font-weight: 700;
+                        }
+                  }
+
+                  .rck-box-form-etp {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 10px;
+                        width: 100%;
+                        .form-etp {
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+                              width: 100%;
+                              max-width: 120px;
+                              .form-etp-one {
+                                    font-size: 22px;
+                                    font-weight: 700;
+                                    background: #000fff;
+                                    color: #fff;
+                                    border-radius: 50%;
+                                    width: 40px;
+                                    height: 40px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin: 0;
+                                    padding: 0;
+                                    position: relative;
+                                    z-index: 1000;
+                              }
+
+                              .form-etp-two {
+                                    font-size: 22px;
+                                    font-weight: 700;
+                                    background: #d3d3d3;
+                                    color: #fff;
+                                    border-radius: 50%;
+                                    width: 40px;
+                                    height: 40px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin: 0;
+                                    padding: 0;
+                                    z-index: 1000;
+                              }
+                        }
+                  }
+
+                  .rck-box-form-etp::after {
+                        content: "";
+                        width: 150px;
+                        height: 3px;
+                        position: absolute;
+                        background: #d3d3d3;
+                        margin-top: 20px;
+                        z-index: 0;
+                  }
+
+                  .rck-box-form-name {
+                        margin: 20px 0;
+                        margin-bottom: 0;
+                        display: flex;
+                        width: 100%;
+
+                        input {
+                              width: 100%;
+                              height: 35px;
+                              margin-bottom: 10px;
+                              border: none;
+                              border-bottom: 1px solid #909090;
+                              font-size: 14px;
+                              font-weight: 700;
+                        }
+                        input:nth-child(1) {
+                              margin-right: 20px;
+                        }
+                  }
+
+                  .rck-box-form-contact {
+                        width: 100%;
+                        input {
+                              width: 100%;
+                              height: 35px;
+                              margin-bottom: 20px;
+                              border: none;
+                              border-bottom: 1px solid #909090;
+                              font-size: 14px;
+                              font-weight: 700;
+                        }
+                        .rck-box-form-contact-tel {
+                              margin-bottom: 0;
+                        }
+                  }
+
+                  .rck-box-form-ass {
+                        text-align: center;
+                        margin: 20px 0;
+
+                        label {
+                              margin: 10px 0;
+                        }
+
+                        .rck-box-form-ass-check {
+                              display: flex;
+                              align-items: center;
+                              justify-content: space-between;
+                              input {
+                                    background: red;
+                                    width: 20px;
+                                    height: 20px;
+                              }
+                        }
+                  }
+
+                  .rck-next {
+                        width: 100%;
+                        max-width: 250px;
+                        height: 50px;
+                        background: linear-gradient(180deg, rgba(0, 255, 255, 0.42) 0%, rgba(0, 15, 255, 0.42) 100%),
+                              #000fff;
+                        border-radius: 9px;
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 22px;
+                        border: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        svg {
+                              margin-left: 20px;
+                        }
+                  }
+
+                  p {
+                        text-align: center;
+                        font-size: 10px;
+                  }
+            }
+
+            /* Etapa 2 */
+            .rck-box-form-next {
+                  background: #ffffff;
+                  padding: 5px 20px;
+                  border-radius: 23px;
+                  width: 100%;
+                  max-width: 500px;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  height: auto;
+                  padding-bottom: 20px;
+                  display: none;
+
+                  h2 {
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #4e4e4e;
+
+                        strong {
+                              color: #000fff;
+                              font-weight: 700;
+                        }
+                  }
+
+                  .rck-box-form-etp {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 30px;
+                        width: 100%;
+
+                        .form-etp {
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+                              width: 100%;
+                              max-width: 120px;
+
+                              .form-etp-one {
+                                    font-size: 22px;
+                                    font-weight: 700;
+                                    background: #d3d3d3;
+                                    color: #fff;
+                                    border-radius: 50%;
+                                    width: 40px;
+                                    height: 40px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin: 0;
+                                    padding: 0;
+                                    position: relative;
+                                    z-index: 1000;
+                              }
+
+                              .form-etp-two {
+                                    font-size: 22px;
+                                    font-weight: 700;
+                                    background: #000fff;
+                                    color: #fff;
+                                    border-radius: 50%;
+                                    width: 40px;
+                                    height: 40px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin: 0;
+                                    padding: 0;
+                                    z-index: 1000;
+                              }
+                        }
+                  }
+
+                  .rck-box-form-etp::after {
+                        content: "";
+                        width: 150px;
+                        height: 3px;
+                        position: absolute;
+                        background: #d3d3d3;
+                        margin-top: 20px;
+                        z-index: 0;
+                  }
+
+                  .rck-box-form-est {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        select {
+                              width: 100%;
+                              border: 1px solid #909090;
+                              color: #4e4e4e;
+                              border-radius: 6px;
+                              padding: 2px;
+                              margin-left: 10px;
+                              font-size: 18px;
+                              font-weight: 500;
+
+                              option {
+                                    font-size: 12px;
+                              }
+                        }
+                  }
+
+                  .rck-box-form-dist {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        margin: 20px 0;
+
+                        select {
+                              width: 100%;
+                              border: 1px solid #909090;
+                              color: #4e4e4e;
+                              border-radius: 6px;
+                              padding: 2px;
+                              margin-left: 10px;
+                              font-size: 18px;
+                              font-weight: 500;
+
+                              option {
+                                    font-size: 12px;
+                              }
+                        }
+                  }
+
+                  .rck-box-form-cust {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 0;
+                        font-size: 12px;
+                        label{
+                              font-size: 16px;
+                        }
+                        select {
+                              width: 61%;
+                              border: 1px solid #909090;
+                              color: #4e4e4e;
+                              border-radius: 6px;
+                              padding: 2px;
+                              margin-left: 10px;
+                              font-size: 18px;
+                              font-weight: 500;
+
+                              option {
+                                    font-size: 12px;
+                              }
+                        }
+                  }
+
+                  .rck-box-form-send {
+                        display: flex;
+                        
+                        .rck-send-opt {
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              text-align: center;
+                              margin-right: 10px;
+
+                              .blocoExemp {
+                                    width: 100px;
+                                    height: 120px;
+                                    margin: 20px 0;
+                                    border-radius: 5px;
+                                    border: 1px solid #909090;
+                                    font-size: 12px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding: 5px;
+                                    border-right: 1px solid #4e4e4e;
+                                    align-items: center;
+                                    svg {
+                                          width: 50px;
+                                          height: 50px;
+                                          margin-bottom: 10px;
+                                    }
+                              }
+                              .blocoExemp:nth-child(1) {
+                                   margin-right: 10px;
+                              }
+                        }
+
+                        .rck-send-terms {
+                              display: flex;
+                              flex-direction: column;
+                              align-items: flex-start;
+                              justify-content: center;
+                              
+                              .rck-send-terms-t {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 10px;
+                                    label {
+                                          font-size: 8px;
+                                    }
+                              }
+
+                              .rck-send-terms-act {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    label {
+                                          font-size: 8px;
+                                          text-align: center;
+                                    }
+                              }
+                        }
+                  }
+
+                  .rck-buttons {
+                        display: flex;
+                        width: 100%;
+
+                        .rck-next {
+                              width: 100%;
+                              max-width: 250px;
+                              height: 40px;
+                              background: linear-gradient(
+                                          180deg,
+                                          rgba(0, 255, 255, 0.42) 0%,
+                                          rgba(0, 15, 255, 0.42) 100%
+                                    ),
+                                    #000fff;
+                              border-radius: 9px;
+                              color: #fff;
+                              font-weight: 700;
+                              font-size: 18px;
+                              border: none;
+                              display: flex;
+                              justify-content: space-around;
+                              align-items: center;
+                              cursor: pointer;
+                        }
+                        .rck-next:nth-child(2) {
+                              margin-left: 10px;
+                              cursor: pointer;
+                        }
+                  }
+
+                  p {
+                        text-align: center;
+                        font-size: 10px;
+                  }
+            }
+      }
+}
+
+@media only screen and (min-width: 992px) {
+      .rck-section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+
+            .rck-container {
+                  display: flex;
+                  flex-direction: row;
+
+                  .rck-box-text {
+                        h2 {
+                              font-size: 40px;
+                              text-align: start;
+                              width: 100%;
+                              max-width: 420px;
+                        }
+                        ul {
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+                              border: 1px solid #000fff;
+                              width: 100%;
+                              max-width: 410px;
+                              padding: 10px;
+                              border-radius: 10px;
+                        }
+                  }
+
+                  .rck-box-form {
+                        .rck-box-form-ass {
+                              margin: 10px 0;
+                              display: flex;
+                              align-items: center;
+                              width: 100%;
+                              flex-direction: row;
+                              justify-content: center;
+                        }
+                  }
+
+                  .rck-box-form-next {
+                        .rck-box-form-send {
+                        display: flex;
+                        
+                        .rck-send-opt {
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              text-align: center;
+                              margin-right: 10px;
+
+                              .blocoExemp {
+                                    width: 100px;
+                                    height: 120px;
+                                    margin: 20px 0;
+                                    border-radius: 5px;
+                                    border: 1px solid #909090;
+                                    font-size: 12px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding: 5px;
+                                    border-right: 1px solid #4e4e4e;
+                                    align-items: center;
+                                    svg {
+                                          width: 50px;
+                                          height: 50px;
+                                          margin-bottom: 10px;
+                                    }
+                              }
+                              .blocoExemp:nth-child(1) {
+                                   margin-right: 10px;
+                              }
+                        }
+
+                        .rck-send-terms {
+                              display: flex;
+                              flex-direction: column;
+                              align-items: flex-start;
+                              justify-content: center;
+                              
+                              .rck-send-terms-t {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 10px;
+                                    label {
+                                          font-size: 8px;
+                                    }
+                              }
+
+                              .rck-send-terms-act {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    label {
+                                          font-size: 8px;
+                                          text-align: center;
+                                    }
+                              }
+                        }
+                  }
+                  }
+                  
+            }
+      }
+}
+
+@media only screen and (min-width: 1400px) {
+      .rck-section {
+            .rck-container {
+                  display: flex;
+                  justify-content: space-evenly;
+
+                  .rck-box-text {
+                        h2 {
+                              font-size: 47px;
+                              text-align: start;
+                              width: 100%;
+                              max-width: 100%;
+                        }
+                  }
+
+                  .rck-box-form {
+                        h2 {
+                              font-size: 24px;
+                        }
+                        .rck-box-form-name {
+                              margin: 10px 0;
+                              input {
+                                    font-size: 20px;
+                              }
+                        }
+                        .rck-box-form-contact {
+                              input {
+                                    font-size: 18px;
+                                    margin-bottom: 20px;
+                              }
+                        }
+                        .rck-box-form-ass {
+                              margin: 10px 0;
+                              display: flex;
+                              align-items: center;
+                              input {
+                                    font-size: 18px;
+                                    margin: 20px 10px;
+                              }
+                        }
+                  }
+                  .rck-box-form-next {
+                        .rck-buttons {
+                              .rck-next {
+                                    height: 50px;
+                              }
+                        }
+                  }
+            }
+      }
+}
