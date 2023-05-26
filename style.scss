@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+      box-sizing: border-box;
+}
+
+body{
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+}
+
+.navegacaoExemplo{
+      width: 100%;
+      height: 80px;
+      background: #000FFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      color: #fff;
+      font-weight: 700;
+}
+
+.rck-section {
+      background-image: url(img/Plano-de-fundo-ultragaz.webp);
+      background-size: cover;
+      padding: 0 20px 20px;
+      color: #4E4E4E;
+      border: #909090;
+      height: 100vh;
+
+      .rck-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .rck-box-text {
+                  color: #000FFF;
+                  width: 100%;
+                  max-width: 500px;
+                  h2 {
+                        text-align: center;
+                        font-size: 20px;
+                        font-weight: 500;
+                        strong {
+                              font-weight: 700;
+                        }
+                  }
+      
+                  ul {
+                        display: none;
+                  }
+            }
+      
+            .rck-box-form {
+                  background: #FFFFFF;
+                  padding: 5px 20px;
+                  border-radius: 23px;
+                  width: 100%;
+                  max-width: 500px;
+                  h2 {
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #4E4E4E;
+
+                        strong {
+                              color: #000FFF;
+                              font-weight: 700;
+                        }
+                  }
+      
+                  .rck-box-form-name {
+                        input{
+                              width: 100%;
+                              height: 35px;
+                              margin-bottom: 20px;
+                              border: none;
+                              border-bottom: 1px solid #909090;
+                              font-size: 14px;
+                              font-weight: 700;
+                        }
+                  }
+      
+                  .rck-box-form-contact {
+                        input {
+                              width: 100%;
+                              height: 35px;
+                              margin-bottom: 20px;
+                              border: none;
+                              border-bottom: 1px solid #909090;
+                              font-size: 14px;
+                              font-weight: 700;
+                        }
+                        .rck-box-form-contact-tel{
+                              margin-bottom: 0;
+                        }
+                  }
+      
+                  .rck-box-form-ass {
+                        text-align: center;
+                        margin: 20px 0;
+                        
+                        label{
+                              margin: 10px 0;
+                        }
+
+                        .rck-box-form-ass-check{
+                              display: flex;
+                              align-items: center;
+                              justify-content: space-between;
+                              input{
+                                    background: red;
+                                    width: 20px;
+                                    height: 20px;
+                                    
+                              }
+                        }
+                  }
+      
+                  .rck-box-form-est {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        select{
+                              width: 100%;
+                              border: 1px solid #909090;
+                              color: #4E4E4E;
+                              border-radius: 6px;
+                              padding: 2px;
+                              margin-left: 10px;
+                              font-size: 18px;
+                              font-weight: 500;
+                        }
+                  }
+      
+                  .rck-box-form-dist {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        margin: 20px 0;
+                        select {
+                              width: 100%;
+                              border: 1px solid #909090;
+                              color: #4E4E4E;
+                              border-radius: 6px;
+                              padding: 2px;
+                              margin-left: 10px;
+                              font-size: 18px;
+                              font-weight: 500;
+                        }
+                  }
+      
+                  .rck-box-form-cust {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        margin: 20px 0;
+                        font-size: 12px;
+                        select {
+                              width: 60%;
+                              border: 1px solid #909090;
+                              color: #4E4E4E;
+                              border-radius: 6px;
+                              padding: 2px;
+                              margin-left: 10px;
+                              font-size: 18px;
+                              font-weight: 500;
+                        }
+                  }
+      
+                  .rck-box-form-send {
+                        margin-bottom: 20px;
+                        .rck-send-opt{
+                              display: flex;
+                              .blocoExemp{
+                                    width: 100%;
+                                    height: 50px;
+                                    margin: 20px 0 ;
+                                    border-radius: 5px;
+                                    border: 1px solid #909090;;
+                              }
+                                                                                                                  .blocoExemp:nth-child(1) {
+                             
+                                    margin-right:20px;                           
+                              }
+                        }
+
+                        .rck-send-terms{
+                              display: flex;
+
+                              .rck-send-terms-t{
+                                    width: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    label {
+                                          font-size: 12px;
+                                    }
+                              }
+
+                              .rck-send-terms-act{
+                                    width: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    label{
+                                          font-size: 6px;
+                                          text-align: center;     
+                                    }
+                              }
+                        }
+                  }
+      
+                  button {
+                       
+                        width: 100%;
+                        height: 50px;
+                        background: linear-gradient(180deg, rgba(0, 255, 255, 0.42) 0%, rgba(0, 15, 255, 0.42) 100%), #000FFF;
+                        border-radius: 9px;
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 22px;
+                        border: none;
+                        
+                  }
+      
+                  p {
+                        text-align: center;
+                        font-size: 10px;
+                  }
+            }
+      
+      }
+}
+
+
+
+
+@media only screen and (min-width: 992px) {
+      .rck-section{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            
+            .rck-container {
+                  display: flex;
+                  flex-direction: row;
+                  
+                  .rck-box-text {
+                     h2{
+                        font-size: 40px;
+                        text-align: start;
+                        width: 100%;
+                        max-width: 420px;
+                     }  
+                     ul{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid #000FFF;
+                        width: 100%;
+                        max-width: 410px;
+                        padding: 10px;
+                        border-radius: 10px;                        
+                     } 
+                  }
+
+                  .rck-box-form {
+                        background: #FFFFFF;
+                        padding: 5px 40px;
+                        border-radius: 23px;
+                        width: 100%;
+                        max-width: 500px;
+                        
+                        h2{
+                              font-size: 20px;
+                              margin: 10px 0;
+                        }
+
+                        .rck-box-form-name{
+                              display: flex;
+                              
+                              input{
+                                    width: 100%;
+                                    margin-bottom: 0;
+                              }
+
+                              input:nth-child(2){
+                                    margin-left: 20px;
+                              }
+                        }
+
+                        .rck-box-form-contact{
+                              input {
+                                    margin-bottom: 0;
+                              }
+                        } 
+
+                        .rck-box-form-ass {
+                              text-align: center;
+                              margin: 0;
+                              display: flex;
+                        }
+
+                        .rck-box-form-dist{
+                              margin: 10px 0;
+                        }
+
+                        .rck-box-form-cust{
+                              margin: 0;
+                              .rck-box-form-cust-label{
+                                    font-size: 16px;
+                                    width: 40%;
+                              }
+
+                              .rck-box-form-cust-select{
+                                    width: 90%;
+                              }
+                        }
+
+                        .rck-box-form-send{
+                              margin: 0;
+                              margin-bottom: 10px;
+                              display: flex;
+                              padding: 10px 0;
+                              
+                              .rck-send-opt{
+                                    display: flex;
+                                    border-right: 1px solid #4E4E4E;
+                                    width: 100%;
+                                    padding-right: 10px;
+
+                                    .blocoExemp{
+                                          width: 100%;
+                                          height: 100%;
+                                          margin: 0;
+                                          padding: 0;
+                                    }
+                                    .blocoExemp:nth-child(1) {
+                                          margin-right: 10px;
+                                    }
+                              }
+
+                              .rck-send-terms{
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    padding: 0 0 0 10px;
+                              
+                                    .rck-send-terms-t{
+                                          width: 100%;
+                                          display: flex;
+                                          justify-content: flex-start;
+                                          align-items: center;
+                                          margin-bottom: 5px;
+                                          input{
+
+                                          }
+                                          label{
+
+                                          }
+                                    }
+
+                                    .rck-send-terms-act{
+                                          width: 100%;
+                                          display: flex;
+                                    
+                                          input{
+
+                                          }
+
+                                          label{
+                                                font-size: 9px;
+                                                text-align: start;
+                                               
+                                          }
+                                    }
+                              }
+                        }
+                        
+                  }
+            }
+      }
+
+} 
+
+@media only screen and (min-width: 1400px) {
+      .rck-section{
+
+            .rck-container{
+                  display: flex;
+                  justify-content: space-evenly;
+
+                  .rck-box-text{
+                        h2{
+                              font-size: 47px;
+                              text-align: start;
+                              width: 100%;
+                              max-width: 100%;
+                        }
+                        ul{
+
+                        }
+                  }
+
+                  .rck-box-form{
+                        h2{
+                              font-size: 24px;
+                        }
+                        .rck-box-form-name{
+                              margin: 20px 0;
+                              input{
+                                    font-size: 20px;
+                              }
+                        }
+                        .rck-box-form-contact{
+                              input {
+                                    font-size: 18px;
+                                    margin-bottom: 20px;
+                              }
+                        }
+                        .rck-box-form-ass{
+                              margin: 10px 0;
+                              display: flex;
+                              align-items: center;
+                              input {
+                                    font-size: 18px;
+                                    margin: 20px 10px;
+                                    
+                              }
+                        }
+                  }
+            }
+      }
+}
+
