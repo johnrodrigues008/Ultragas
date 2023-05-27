@@ -357,11 +357,9 @@ function formsA() {
 
       `;
 
-      
-      
 
       // Função para o html
-      var containerIniciar = document.querySelector('.et_pb_section.et_pb_section_1.et_pb_with_background.et_section_regular');
+      var containerIniciar = document.querySelector('div.et_pb_section.et_pb_section_1');
       containerIniciar.innerHTML = `
             <div class="rck-section">
                   <div class="rck-container">
