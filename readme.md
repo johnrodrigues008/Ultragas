@@ -2,16 +2,16 @@ _O codigo apresentados nos scripts já está responsivo para a versão mobile e 
 
 **Teste A (Passo único)**
   - ✔ Colocar imagem de inserir arquivo, "já tem a funcionalidade no teste B"
-    - Colocar a funcionalidade no Teste A 
+    - ✔ Colocar a funcionalidade no Teste A 
   - Testar o funcionamento do envio do formulario
     - Inserir obrigatoriedade nos campos
   - Revisar estética geral (com time de consultoria)
     - ✔ Subir copy do banner para alinhamento no topo
     - ✔ Colocar quadrante no tópicos
-    - Tirar ":" dos tópicos
-    - Colocar exemplos no input
-    - Voltar as caixas como as originais
-    - Diminuir o dropdown de estado, distribuidora e conta
+    - ✔ Tirar ":" dos tópicos
+    - ✔ Colocar exemplos no input
+    - ✔ Voltar as caixas como as originais
+    - ✔ Diminuir o dropdown de estado, distribuidora e conta
     - ✔ Diminuir botão principal
     - ✔ Aumentar espacaçamento entre a entrelinha e o btn principal
     - ✔ Negrito no "(opcional)"
