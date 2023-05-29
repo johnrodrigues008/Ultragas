@@ -15,6 +15,10 @@
   }
 }
 
+.optimize .et_pb_text_9 {
+  padding-top: unset!important;
+}
+
 /* Style do html */
 
 .optimize div.et_pb_section.et_pb_section_1 {
@@ -37,8 +41,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 100%;
+}
+.optimize div.wpforms-container-full {
+    margin: unset;
 }
 .rck-section .rck-container .rck-box-text {
   color: #000FFF;
@@ -68,9 +74,10 @@
 }
 .rck-section .rck-container .rck-box-form h2 {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: #4E4E4E;
+  margin: 0 0 15px;
 }
 .rck-section .rck-container .rck-box-form h2 strong {
   color: #000FFF;
@@ -79,88 +86,96 @@
 .rck-section .rck-container .rck-box-form .rck-box-form-name input {
   width: 100%;
   height: 35px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   border: none;
   border-bottom: 1px solid #909090;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-contact input {
   width: 100%;
   height: 35px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   border: none;
   border-bottom: 1px solid #909090;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-contact .rck-box-form-contact-tel {
   margin-bottom: 0;
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-ass {
   text-align: center;
-  margin: 20px 0;
+  padding: 15px 0;
 }
-.rck-section .rck-container .rck-box-form .rck-box-form-ass label {
-  margin: 10px 0;
-}
+
 .rck-section .rck-container .rck-box-form .rck-box-form-ass .rck-box-form-ass-check {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-ass .rck-box-form-ass-check input {
-  background: red;
   width: 20px;
   height: 20px;
+  margin: 0 10px 0 20px;
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-est {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-est select {
-  width: 100%;
+  width: 58%;
   border: 1px solid #909090;
-  color: #4E4E4E;
+  color: #4e4e4e;
   border-radius: 6px;
   padding: 2px;
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
+}
+.rck-section .rck-container .rck-box-form .rck-box-form-est select option {
+  font-size: 12px;
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-dist {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 20px 0;
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-dist select {
-  width: 100%;
+  width: 58%;
   border: 1px solid #909090;
-  color: #4E4E4E;
+  color: #4e4e4e;
   border-radius: 6px;
   padding: 2px;
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
+}
+.rck-section .rck-container .rck-box-form .rck-box-form-dist select option {
+  font-size: 12px;
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-cust {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  margin: 0;
   font-size: 12px;
 }
+.rck-section .rck-container .rck-box-form .rck-box-form-cust label {
+  font-size: 16px;
+}
 .rck-section .rck-container .rck-box-form .rck-box-form-cust select {
-  width: 60%;
+  width: 58%;
   border: 1px solid #909090;
-  color: #4E4E4E;
+  color: #4e4e4e;
   border-radius: 6px;
   padding: 2px;
   margin-left: 10px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 14px;
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-send {
   margin-bottom: 20px;
@@ -214,16 +229,18 @@
 .rck-section .rck-container .rck-box-form .rck-box-form-send .rck-send-terms .rck-send-terms-act label {
   font-size: 12px;
 }
-.rck-section .rck-container .rck-box-form button {
+.rck-section .rck-container .rck-box-form #btnSubmit-rck-form {
   align-self: center;
-  width: 80%;
+  width: 80% !important;
   height: 50px;
+  background-color: #000FFF!important;
   background: linear-gradient(180deg, rgba(0, 255, 255, 0.42) 0%, rgba(0, 15, 255, 0.42) 100%), #000FFF;
-  border-radius: 9px;
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-  border: none;
+  border-radius: 9px !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  border: none !important;
+  padding: unset !important;
 }
 .rck-section .rck-container .rck-box-form p {
   text-align: center;
@@ -272,28 +289,62 @@
   }
   .rck-section .rck-container .rck-box-form h2 {
     font-size: 20px;
-    margin: 10px 0;
+    margin: 0 0 20px;
   }
   .rck-section .rck-container .rck-box-form .rck-box-form-name {
     display: flex;
+    justify-content: space-between;
+  }
+  .rck-section .rck-container .rck-box-form .rck-box-form-name .wpforms-field {
+    width: 46%;
   }
   .rck-section .rck-container .rck-box-form .rck-box-form-name input {
     width: 100%;
     margin-bottom: 0;
   }
   .rck-section .rck-container .rck-box-form .rck-box-form-name input:nth-child(2) {
-    margin-left: 20px;
+    /* margin-left: 20px; */
   }
   .rck-section .rck-container .rck-box-form .rck-box-form-contact input {
     margin-bottom: 0;
   }
+
+  .optimize div.wpforms-container-full .wpforms-form .wpforms-field.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .optimize div.wpforms-container-full .wpforms-form .wpforms-field.flex-row input {
+    width: 80%;
+  }
+
   .rck-section .rck-container .rck-box-form .rck-box-form-ass {
     text-align: center;
+    align-items: center;
     margin: 0;
     display: flex;
+    justify-content: baseline;
   }
+  
+.rck-section .rck-container .rck-box-form .rck-box-form-ass label {
+  margin: unset;
+}
+
+  .rck-section .rck-container .rck-box-form .rck-box-form-est,
+  .rck-section .rck-container .rck-box-form .rck-box-form-dist,
+  .rck-section .rck-container .rck-box-form .rck-box-form-cust {
+    align-items: baseline;
+    padding: 10px 0;
+  }
+
+  .rck-section .rck-container .rck-box-form .rck-box-form-est select,
+  .rck-section .rck-container .rck-box-form .rck-box-form-dist select,
+  .rck-section .rck-container .rck-box-form .rck-box-form-cust select{
+    width: 70%;
+  }
+
   .rck-section .rck-container .rck-box-form .rck-box-form-dist {
-    margin: 10px 0;
+  margin: unset;
   }
   .rck-section .rck-container .rck-box-form .rck-box-form-cust {
     margin: 0;
@@ -361,6 +412,9 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
+  .rck-section .rck-container .rck-box-form .rck-box-form-ass input {
+    margin: 20px 10px;
+  }
 }
 @media only screen and (min-width: 1400px) {
   .rck-section .rck-container {
@@ -373,21 +427,18 @@
     width: 100%;
     max-width: 100%;
   }
-  .rck-section .rck-container .rck-box-form h2 {
-    font-size: 24px;
-  }
   .rck-section .rck-container .rck-box-form .rck-box-form-name {
-    margin: 20px 0;
+    /* margin: 20px 0; */
   }
   .rck-section .rck-container .rck-box-form .rck-box-form-name input {
-    font-size: 20px;
+    font-size: 14px;
   }
   .rck-section .rck-container .rck-box-form .rck-box-form-contact input {
-    font-size: 18px;
-    margin-bottom: 20px;
+    /* font-size: 18px; */
+    /* margin-bottom: 20px; */
   }
   .rck-section .rck-container .rck-box-form .rck-box-form-ass {
-    margin: 10px 0;
+    /* margin: 10px 0; */
     display: flex;
     align-items: center;
   }
