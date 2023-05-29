@@ -6,15 +6,15 @@ _O codigo apresentados nos scripts já está responsivo para a versão mobile e 
   - Testar o funcionamento do envio do formulario
     - Inserir obrigatoriedade nos campos
   - Revisar estética geral (com time de consultoria)
-    - Subir copy do banner para alinhamento no topo
-    - Colocar quadrante no tópicos
+    - ✔ Subir copy do banner para alinhamento no topo
+    - ✔ Colocar quadrante no tópicos
     - Tirar ":" dos tópicos
     - Colocar exemplos no input
     - Voltar as caixas como as originais
     - Diminuir o dropdown de estado, distribuidora e conta
-    - Diminuir botão principal
-    - Aumentar espacaçamento entre a entrelinha e o btn principal
-    - Negrito no "(opcional)"
+    - ✔ Diminuir botão principal
+    - ✔ Aumentar espacaçamento entre a entrelinha e o btn principal
+    - ✔ Negrito no "(opcional)"
 
 **Teste B**
   - ✔ Ajustar a versão Mobile 'De acordo com o teste A'
@@ -23,19 +23,19 @@ _O codigo apresentados nos scripts já está responsivo para a versão mobile e 
   - Testar o funcionamento do envio do formulario
     - Inserir obrigatoriedade nos campos
   - Revisar estética geral (com time de consultoria)
-    - Subir copy do banner para alinhamento no topo
-    - Colocar quadrante no tópicos
+    - ✔ Subir copy do banner para alinhamento no topo
+    - ✔ Colocar quadrante no tópicos
     - Tirar ":" dos tópicos
     - Colocar exemplos no input
     - Voltar as caixas como as originais
     - Diminuir o dropdown de estado, distribuidora e conta
-    - Diminuir botão principal
-    - Aumentar espacaçamento entre a entrelinha e o btn principal
-    - Negrito no "(opcional)"
-    - Aumentar copy acima do card
-    - Padronizar tamanho dos cards
-    - Aumentar espaço entre o progresso e o copy do card
-    - Na segunda etapa do progresso, deixar primeira etapa em azul
+    - ❌ Diminuir botão principal
+    - ✔ Aumentar espacaçamento entre a entrelinha e o btn principal
+    - ✔ Negrito no "(opcional)"
+    - ❓ Aumentar copy acima do card
+    - ✔ Padronizar tamanho dos cards
+    - ✔ Aumentar espaço entre o progresso e o copy do card
+    - ✔ Na segunda etapa do progresso, deixar primeira etapa em azul
     - Avançar para o passo 2 apenas depois de concluir o passo 1
 
 - Diminuir altura do container de calcule
