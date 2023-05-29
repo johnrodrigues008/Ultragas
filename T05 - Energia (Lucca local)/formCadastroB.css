@@ -13,6 +13,10 @@
     margin: 0 25%;
     padding: unset;
   }
+
+  .optimize .et_pb_text_9 {
+    padding-top: unset!important;
+  }
 }
 
 /* Style do html */
@@ -62,14 +66,14 @@
 }
 .rck-section .rck-container .rck-box-form {
   background: #ffffff;
-  color: #909090!important;
   padding: 20px;
   border-radius: 23px;
   width: 100%;
   max-width: 500px;
+  min-height: 640px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .rck-section .rck-container .rck-box-form h2 {
@@ -85,7 +89,7 @@
 .rck-section .rck-container .rck-box-form .rck-box-form-etp {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin: 15px 0;
   width: 100%;
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-etp .form-etp {
@@ -95,6 +99,9 @@
   align-items: center;
   width: 100%;
   max-width: 120px;
+}
+.rck-section .rck-container .rck-box-form .rck-box-form-etp .form-etp:nth-child(2) {
+  color: #909090;
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-etp .form-etp .form-etp-one {
   font-size: 22px;
@@ -206,6 +213,7 @@
 .rck-section .rck-container .rck-box-form p {
   text-align: center;
   font-size: 10px;
+  margin-top: 10px;
 }
 .rck-section .rck-container .rck-box-form-next {
   background: #ffffff;
@@ -213,8 +221,9 @@
   border-radius: 23px;
   width: 100%;
   max-width: 500px;
+  min-height: 640px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: auto;
   padding-bottom: 20px;
@@ -233,7 +242,7 @@
 .rck-section .rck-container .rck-box-form-next .rck-box-form-etp {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin: 15px 0;
   width: 100%;
 }
 .rck-section .rck-container .rck-box-form-next .rck-box-form-etp .form-etp {
@@ -247,7 +256,7 @@
 .rck-section .rck-container .rck-box-form-next .rck-box-form-etp .form-etp .form-etp-one {
   font-size: 22px;
   font-weight: 700;
-  background: #d3d3d3;
+  background: #000fff;
   color: #fff;
   border-radius: 50%;
   width: 40px;
@@ -280,7 +289,7 @@
   width: 150px;
   height: 3px;
   position: absolute;
-  background: #d3d3d3;
+  background: #000fff;
   margin-top: 20px;
   z-index: 0;
 }
@@ -427,6 +436,7 @@
 .rck-section .rck-container .rck-box-form-next p {
   text-align: center;
   font-size: 10px;
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 992px) {

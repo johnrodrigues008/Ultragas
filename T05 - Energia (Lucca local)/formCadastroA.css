@@ -58,6 +58,8 @@
   display: none;
 }
 .rck-section .rck-container .rck-box-form {
+  display: flex;
+  flex-direction: column;
   background: #FFFFFF;
   padding: 20px;
   border-radius: 23px;
@@ -213,18 +215,20 @@
   font-size: 12px;
 }
 .rck-section .rck-container .rck-box-form button {
-  width: 100%;
+  align-self: center;
+  width: 80%;
   height: 50px;
   background: linear-gradient(180deg, rgba(0, 255, 255, 0.42) 0%, rgba(0, 15, 255, 0.42) 100%), #000FFF;
   border-radius: 9px;
   color: #fff;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   border: none;
 }
 .rck-section .rck-container .rck-box-form p {
   text-align: center;
   font-size: 10px;
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -258,6 +262,8 @@
     border-radius: 10px;
   }
   .rck-section .rck-container .rck-box-form {
+    display: flex;
+    flex-direction: column;
     background: #FFFFFF;
     padding: 20px;
     border-radius: 23px;
