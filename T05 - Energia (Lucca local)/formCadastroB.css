@@ -480,6 +480,14 @@
   .rck-section .rck-container .rck-box-form-next h2{
     font-size: 20px;
   }
+  .rck-section .rck-container .rck-box-form .rck-box-form-name {
+    margin: 10px 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .rck-section .rck-container .rck-box-form .rck-box-form-name .wpforms-field {
+    width: 46%;
+  }
   .rck-section .rck-container .rck-box-form .rck-box-form-ass {
     display: flex;
     align-items: center;
@@ -568,9 +576,7 @@
     width: 100%;
     max-width: 100%;
   }
-  .rck-section .rck-container .rck-box-form .rck-box-form-name {
-    margin: 10px 0;
-  }
+
 
   .rck-section .rck-container .rck-box-form .rck-box-form-ass input {
     font-size: 18px;
