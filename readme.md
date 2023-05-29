@@ -36,6 +36,7 @@ _O codigo apresentados nos scripts já está responsivo para a versão mobile e 
     - Padronizar tamanho dos cards
     - Aumentar espaço entre o progresso e o copy do card
     - Na segunda etapa do progresso, deixar primeira etapa em azul
+    - Avançar para o passo 2 apenas depois de concluir o passo 1
 
 - Diminuir altura do container de calcule
 
