@@ -113,6 +113,7 @@
 .rck-section .rck-container .rck-box-form .rck-box-form-ass .rck-box-form-ass-check {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-ass .rck-box-form-ass-check input {
   width: 20px;
@@ -222,6 +223,7 @@
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-send .rck-send-terms .rck-send-terms-t label {
   font-size: 12px;
+  width: calc(100% - 27px);
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-send .rck-send-terms .rck-send-terms-act {
   display: flex;
@@ -231,6 +233,7 @@
 }
 .rck-section .rck-container .rck-box-form .rck-box-form-send .rck-send-terms .rck-send-terms-act label {
   font-size: 12px;
+  width: calc(100% - 27px);
 }
 .rck-section .rck-container .rck-box-form #btnSubmit-rck-form {
   align-self: center;
@@ -262,6 +265,7 @@
   .rck-section .rck-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
   }
   .rck-section .rck-container .rck-box-text h2 {
     font-size: 40px;
@@ -421,10 +425,6 @@
   }
 }
 @media only screen and (min-width: 1400px) {
-  .rck-section .rck-container {
-    display: flex;
-    justify-content: space-evenly;
-  }
   .rck-section .rck-container .rck-box-text h2 {
     font-size: 47px;
     line-height: 52px;
