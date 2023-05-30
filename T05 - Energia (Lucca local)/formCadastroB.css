@@ -51,6 +51,9 @@
   /* Etapa 1 */
   /* Etapa 2 */
 }
+.optimize div.wpforms-container-full {
+  margin: unset;
+}
 .rck-section .rck-container .rck-box-text {
   color: #000fff!important;
   width: 100%;
@@ -194,7 +197,9 @@
 .rck-section .rck-container .rck-box-form .rck-box-form-ass .rck-box-form-ass-check input {
   width: 20px;
   height: 20px;
-  margin: 0 10px 0 20px;
+}
+.rck-section .rck-container .rck-box-form .rck-box-form-ass .rck-box-form-ass-check input:nth-child(2) {
+  margin-left: 20px;
 }
 .rck-section .rck-container .rck-box-form .rck-next {
   width: 100%;
@@ -460,6 +465,7 @@
   }
   .rck-section .rck-container .rck-box-text h2 {
     font-size: 40px;
+    line-height: 45px;
     text-align: start;
     width: 100%;
     max-width: 420px;
@@ -572,6 +578,7 @@
   }
   .rck-section .rck-container .rck-box-text h2 {
     font-size: 47px;
+    line-height: 52px;
     text-align: start;
     width: 100%;
     max-width: 100%;

@@ -51,8 +51,8 @@ function formsA() {
         <div class="rck-box-form-ass">
           <label class="wpforms-field-label" for="">Assinatura para <span class="wpforms-required-label">*</span></label>
           <div class="rck-box-form-ass-check">
-            <input type="radio" name="assinatura" id="wpforms-651-field_11_1" required="">Minha casa
-            <input type="radio" name="assinatura" id="wpforms-651-field_11_2" required="">Minha empresa
+            <input type="radio" name="assinatura" id="wpforms-651-field_11_1" required checked>Minha casa
+            <input type="radio" name="assinatura" id="wpforms-651-field_11_2" required>Minha empresa
           </div>
         </div>
         <div class="rck-box-form-est">
@@ -146,11 +146,11 @@ function formsA() {
           </div>
           <div class="rck-send-terms">
             <div class="rck-send-terms-t">
-              <input type="checkbox" name="" id="wpforms-651-field_18_1">
+              <input type="checkbox" name="" id="wpforms-651-field_18_1" required>
               <label for="">Concordo com os <a href="#">Termos de Uso.</a></label>
             </div>
             <div class="rck-send-terms-act">
-              <input type="checkbox" name="" id="wpforms-651-field_29_1">
+              <input type="checkbox" name="" id="wpforms-651-field_29_1" required>
               <label for="">Aceito receber conteúdo da Ultragaz Energia sobre produtos
               disponíveis, via e-mail, celular e/ou Whatsapp.</label>
             </div>

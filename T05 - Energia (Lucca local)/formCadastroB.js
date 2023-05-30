@@ -24,7 +24,7 @@ function formsB() {
           </ul>
         </div>
         <!-- Etapa 1 -->
-        <form class="rck-box-form wpforms-form" id="rck-box-form" style="display: none;">
+        <form class="rck-box-form wpforms-form" id="rck-box-form" style="display: flex;">
           <h2>
             <strong>Cadastre-se agora</strong> e garanta todos os benefícios da <strong>Ultragaz Energia
             Inteligente!</strong>
@@ -64,23 +64,16 @@ function formsB() {
           <div class="rck-box-form-ass">
             <label class="wpforms-field-label" for="">Assinatura para <span class="wpforms-required-label">*</span></label>
             <div class="rck-box-form-ass-check">
-              <input type="radio" name="assinatura" id="wpforms-651-field_11_1" required="">Minha casa
-              <input type="radio" name="assinatura" id="wpforms-651-field_11_2" required="">Minha empresa
+              <input type="radio" name="assinatura" id="wpforms-651-field_11_1" required checked>Minha casa
+              <input type="radio" name="assinatura" id="wpforms-651-field_11_2" required>Minha empresa
             </div>
           </div>
           <!-- Link já configurado -->
           <a class="rck-next" id="rck-next">
             AVANÇAR 
-            <svg width="35" height="34" viewBox="0 0 35 34" fill="" xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <path d="M17.9624 33.9811C21.3209 33.9811 24.6041 32.9852 27.3966 31.1193C30.1891 29.2534 32.3657 26.6013 33.6509 23.4984C34.9362 20.3955 35.2725 16.9812 34.6172 13.6871C33.962 10.3931 32.3447 7.36738 29.9699 4.99253C27.595 2.61767 24.5693 1.00038 21.2752 0.345155C17.9812 -0.310066 14.5669 0.0262175 11.464 1.31148C8.3611 2.59674 5.70901 4.77326 3.8431 7.56579C1.97719 10.3583 0.981262 13.6414 0.981262 17C0.981262 21.5037 2.77034 25.8229 5.95492 29.0075C9.1395 32.1921 13.4587 33.9811 17.9624 33.9811ZM15.7735 7.32075L25.4528 17.1121L15.7548 26.6979L13.3775 24.2832L20.6607 17.0798L13.3588 9.69811L15.7735 7.32075Z" fill="white"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_13_755">
-                  <rect width="33.9623" height="33.9623" fill="white" transform="translate(0.981262 0.0188599)"></rect>
-                </clipPath>
-              </defs>
-            </svg>
+            <svg fill="none" viewBox="0 0 26 25" style="height: 25px;">
+<path d="m13.05 24.637c2.4206 0 4.7869-0.7178 6.7995-2.0626 2.0127-1.3448 3.5814-3.2563 4.5077-5.4926 0.9263-2.2364 1.1687-4.6972 0.6964-7.0713-0.4722-2.3741-1.6378-4.5548-3.3495-6.2664-1.7116-1.7116-3.8923-2.8773-6.2664-3.3495-2.3741-0.47224-4.8349-0.22987-7.0713 0.69646-2.2364 0.92633-4.1478 2.495-5.4926 4.5077-1.3448 2.0127-2.0626 4.3789-2.0626 6.7995 0 3.2459 1.2894 6.3589 3.5847 8.6541 2.2952 2.2953 5.4082 3.5847 8.6542 3.5847zm-1.5776-19.215 6.9761 7.0569-6.9895 6.9088-1.7135-1.7404 5.2492-5.1917-5.2626-5.3202 1.7403-1.7134z" fill="#fff"/>
+</svg>
           </a>
           <p>
             *Atualmente disponível para os estados de GO, MG, MT, MS, PR, RS e SC. Se seu estado ainda
@@ -88,7 +81,7 @@ function formsB() {
           </p>
         </form>
         <!-- Etapa 2 -->
-        <form class="rck-box-form-next wpforms-form" id="rck-box-form-next" style="display: flex;">
+        <form class="rck-box-form-next wpforms-form" id="rck-box-form-next" style="display: none;">
           <h2><strong>Cadastre-se agora</strong> e garanta todos os benefícios da <strong>Ultragaz Energia
             Inteligente!</strong>
           </h2>
@@ -195,11 +188,11 @@ function formsB() {
             <!-- termos ok -->
             <div class="rck-send-terms">
               <div class="rck-send-terms-t">
-                <input type="checkbox" id="wpforms-651-field_18_1">
+                <input type="checkbox" id="wpforms-651-field_18_1" required>
                 <label for="">Concordo com os <a href="#">Termos de Uso.</a></label>
               </div>
               <div class="rck-send-terms-act">
-                <input type="checkbox" name="" id="wpforms-651-field_29_1">
+                <input type="checkbox" name="" id="wpforms-651-field_29_1" required>
                 <label for="">Aceito receber conteúdo da Ultragaz Energia sobre produtos
                 disponíveis, via e-mail, celular e/ou Whatsapp.</label>
               </div>
@@ -207,30 +200,16 @@ function formsB() {
           </div>
           <div class="rck-buttons">
             <a class="rck-next" id="rck-prev">
-              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <path d="M12.6617 24.6368C10.2411 24.6368 7.87485 23.919 5.86219 22.5742C3.84953 21.2294 2.28085 19.3179 1.35452 17.0816C0.428196 14.8452 0.185827 12.3844 0.658064 10.0103C1.1303 7.63622 2.29593 5.45548 4.00756 3.74385C5.71919 2.03222 7.89994 0.866588 10.274 0.39435C12.6481 -0.0778866 15.1089 0.164483 17.3453 1.09081C19.5816 2.01714 21.4931 3.58581 22.8379 5.59847C24.1827 7.61114 24.9005 9.97738 24.9005 12.398C24.9005 15.6439 23.6111 18.7569 21.3158 21.0521C19.0206 23.3474 15.9076 24.6368 12.6617 24.6368ZM14.2393 5.42187L7.26317 12.4788L14.2528 19.3876L15.9662 17.6472L10.717 12.4555L15.9796 7.1353L14.2393 5.42187Z" fill="white"></path>
-                </g>
-                <defs>
-                  <clipPath id="clip0_13_1181">
-                    <rect width="24.4776" height="24.4776" fill="white" transform="matrix(-1 0 0 1 24.9005 0.15918)"></rect>
-                  </clipPath>
-                </defs>
-              </svg>
+              <svg fill="none" viewBox="0 0 25 25" style="height: 25px;">
+<path d="m12.662 24.637c-2.4206 0-4.7868-0.7178-6.7995-2.0626s-3.5813-3.2563-4.5077-5.4926c-0.92632-2.2364-1.1687-4.6972-0.69646-7.0713 0.47224-2.3741 1.6379-4.5548 3.3495-6.2664s3.8924-2.8773 6.2664-3.3495c2.3741-0.47224 4.8349-0.22987 7.0713 0.69646 2.2363 0.92633 4.1478 2.495 5.4926 4.5077 1.3448 2.0127 2.0626 4.3789 2.0626 6.7995 0 3.2459-1.2894 6.3589-3.5847 8.6541-2.2952 2.2953-5.4082 3.5847-8.6541 3.5847zm1.5776-19.215-6.9761 7.0569 6.9896 6.9088 1.7134-1.7404-5.2492-5.1917 5.2626-5.3202-1.7403-1.7134z" fill="#fff"/>
+</svg>
               ANTERIOR
             </a>
             <a class="rck-next" id="rck-next-enviar">
               ENVIAR
-              <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <path d="M13.0498 24.6368C15.4704 24.6368 17.8367 23.919 19.8493 22.5742C21.862 21.2294 23.4307 19.3179 24.357 17.0816C25.2833 14.8452 25.5257 12.3844 25.0534 10.0103C24.5812 7.63622 23.4156 5.45548 21.7039 3.74385C19.9923 2.03222 17.8116 0.866588 15.4375 0.39435C13.0634 -0.0778866 10.6026 0.164483 8.36621 1.09081C6.12986 2.01714 4.21842 3.58581 2.8736 5.59847C1.52878 7.61114 0.810989 9.97738 0.810989 12.398C0.810989 15.6439 2.10043 18.7569 4.39565 21.0521C6.69087 23.3474 9.80386 24.6368 13.0498 24.6368ZM11.4722 5.42187L18.4483 12.4788L11.4588 19.3876L9.74532 17.6472L14.9945 12.4555L9.73186 7.1353L11.4722 5.42187Z" fill="white"></path>
-                </g>
-                <defs>
-                  <clipPath>
-                    <rect width="24.4776" height="24.4776" fill="white" transform="translate(0.810989 0.15918)"></rect>
-                  </clipPath>
-                </defs>
-              </svg>
+              <svg fill="none" viewBox="0 0 26 25" style="height: 25px;">
+<path d="m13.05 24.637c2.4206 0 4.7869-0.7178 6.7995-2.0626 2.0127-1.3448 3.5814-3.2563 4.5077-5.4926 0.9263-2.2364 1.1687-4.6972 0.6964-7.0713-0.4722-2.3741-1.6378-4.5548-3.3495-6.2664-1.7116-1.7116-3.8923-2.8773-6.2664-3.3495-2.3741-0.47224-4.8349-0.22987-7.0713 0.69646-2.2364 0.92633-4.1478 2.495-5.4926 4.5077-1.3448 2.0127-2.0626 4.3789-2.0626 6.7995 0 3.2459 1.2894 6.3589 3.5847 8.6541 2.2952 2.2953 5.4082 3.5847 8.6542 3.5847zm-1.5776-19.215 6.9761 7.0569-6.9895 6.9088-1.7135-1.7404 5.2492-5.1917-5.2626-5.3202 1.7403-1.7134z" fill="#fff"/>
+</svg>
             </a>
           </div>
           <p>*Atualmente disponível para os estados de GO, MG, MT, MS, PR, RS e SC. Se seu estado ainda
@@ -254,16 +233,11 @@ function formsB() {
     document.getElementById("rck-box-form").style.display = "flex";
   });
 
-  // funcao de ligacao entre os forms
   function connectForms() {
-
-  //--- Elementos do NOVO FORMS:
 
     let newForm = document.querySelector("form.rck-box-form");
     let newFormNext = document.querySelector("form.rck-box-form-next");
 
-  // newForm
-    // dados pessoais
     let inputNome = newForm.querySelector("#wpforms-651-field_1");
     let inputSobrenome = newForm.querySelector("#wpforms-651-field_2");
     
@@ -273,31 +247,19 @@ function formsB() {
     let inputCasa = newForm.querySelector("#wpforms-651-field_11_1");
     let inputEmpresa = newForm.querySelector("#wpforms-651-field_11_2");
 
-  // newFormNext
-
-    // local e custo
     let selectEstado = newFormNext.querySelector("#wpforms-651-field_34");
     let selectDistribuidora = newFormNext.querySelector("#wpforms-651-field_6");
     let selectCusto = newFormNext.querySelector("#wpforms-651-field_16");
 
-    // acordos
     let inputTermosDeUso = newFormNext.querySelector("#wpforms-651-field_18_1");
     let inputReceberConteudo = newFormNext.querySelector("#wpforms-651-field_29_1");
 
-  // BOTAO ENVIAR
     let btnSubmit = newFormNext.querySelector('#rck-next-enviar');
-
-
-//---- FORMS ORIGINAL
     let originalForm = document.querySelector('form#wpforms-form-651');
-
-    // armazenando todos os inputs e selects em uma lista
     var inputs = [inputNome, inputSobrenome, inputEmail, inputTelefone, inputCasa,
       inputEmpresa, inputTermosDeUso, inputReceberConteudo];
 
     var selects = [selectEstado, selectDistribuidora, selectCusto];
-
-    // vinculando campos
     vincularInputs(inputs, originalForm);
     vincularSelects(selects, originalForm);
 
@@ -316,8 +278,6 @@ function formsB() {
       });
       });
     }
-
-  //---- Adicionar o arquivo
     let AnexaLuz = document.querySelector('#AnexaLuz');
     AnexaLuz.addEventListener('click', ()=>{
       document.querySelector("#wpforms-651-field_39-container .wpforms-uploader.dz-clickable").click();
@@ -329,13 +289,9 @@ function formsB() {
       document.querySelector("#wpforms-651-field_40-container .wpforms-uploader.dz-clickable").click();
     });
 
-    // vinculando submit
     btnSubmit.addEventListener('click', function () {
       originalForm.submit();
     });
-
-  
-
   }
 
   document.body.classList.add("optimize");
