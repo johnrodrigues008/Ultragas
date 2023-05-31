@@ -64,8 +64,8 @@ function formsB() {
           <div class="rck-box-form-ass">
             <label class="wpforms-field-label" for="">Assinatura para <span class="wpforms-required-label">*</span></label>
             <div class="rck-box-form-ass-check">
-              <input type="radio" name="assinatura" id="wpforms-651-field_11_1" value="Minha casa" required checked>Minha casa
-              <input type="radio" name="assinatura" id="wpforms-651-field_11_2" value="Minha empresa" required>Minha empresa
+              <input type="radio" name="assinatura" id="rck-Casa" value="Minha casa" required checked>Minha casa
+              <input type="radio" name="assinatura" id="rck-Empresa" value="Minha empresa" required>Minha empresa
             </div>
           </div>
           <!-- Link já configurado -->
@@ -176,7 +176,7 @@ function formsB() {
                 Enviar conta de luz <strong> (opcional) </strong>
               </div>
               <div class="blocoExemp" id="AnexaIde">
-                <svg viewBox="0 0 44 44">
+                <svg viewBox="0 0 44 44"> 
                   <g fill="#909090">
                     <path d="m43.666 12.886-12.552-12.552c-0.214-0.214-0.5042-0.33422-0.8071-0.33422h-22.555c-4.274 0-7.7511 3.4771-7.7511 7.7511v28.498c0 4.274 3.4771 7.7511 7.7511 7.7511h28.498c4.274 0 7.7511-3.4771 7.7511-7.7511v-22.556c-2e-4 -0.3027-0.1206-0.5929-0.3346-0.8069zm-12.408-9.1799 9.0357 9.0357h-9.0357v-9.0357zm4.9913 38.011h-28.498c-3.0152 0-5.4684-2.4531-5.4684-5.4684v-28.498c0-3.0152 2.4531-5.4684 5.4684-5.4684h21.224v11.601c0 0.6302 0.5111 1.1414 1.1413 1.1414h11.601v21.224c2e-4 3.0153-2.4529 5.4684-5.4682 5.4684z"></path>
                     <path d="m19.75 9.9675c-1.1161-1.116-2.5998-1.7307-4.1781-1.7307s-3.0621 0.61461-4.1781 1.7307c-1.1161 1.116-1.7307 2.5998-1.7307 4.1781s0.61457 3.062 1.7307 4.178l11.706 11.706c1.5136 1.5134 3.9757 1.513 5.4889 0 1.5133-1.5134 1.5133-3.9755 0-5.4889l-11.59-11.59c-0.4457-0.4457-1.1686-0.4457-1.6141 0-0.4457 0.4457-0.4457 1.1683 0 1.614l11.59 11.59c0.6232 0.6232 0.6232 1.6375 0 2.2606-0.6232 0.6232-1.6373 0.6232-2.2606 0l-11.706-11.705c-0.685-0.685-1.062-1.5956-1.062-2.564 0-0.9687 0.3772-1.8793 1.062-2.5641 1.414-1.4139 3.7142-1.4139 5.1281 0l12.265 12.265c2.2003 2.2003 2.2003 5.7805 0 7.9809-1.0658 1.0658-2.483 1.6528-3.9903 1.6528-1.5074 0-2.9245-0.587-3.9904-1.6528l-9.4299-9.4302c-0.4457-0.4457-1.1686-0.4457-1.6141 0-0.4457 0.4457-0.4457 1.1684 0 1.614l9.43 9.43c1.497 1.4971 3.4874 2.3215 5.6044 2.3215s4.1075-0.8244 5.6044-2.3215c1.4968-1.497 2.3214-3.4873 2.3214-5.6045 0-2.117-0.8244-4.1076-2.3214-5.6044l-12.265-12.265z"></path>
@@ -188,11 +188,11 @@ function formsB() {
             <!-- termos ok -->
             <div class="rck-send-terms">
               <div class="rck-send-terms-t">
-                <input type="checkbox" id="wpforms-651-field_18_1" required>
-                <label for="">Concordo com os <a href="#">Termos de Uso.</a></label>
+                <input type="checkbox" id="rck-Terms" required>
+                <label for="">Concordo com os <a href="#">Termos de Uso. *</a></label>
               </div>
               <div class="rck-send-terms-act">
-                <input type="checkbox" name="" id="wpforms-651-field_29_1" required>
+                <input type="checkbox" name="" id="wpforms-651-field_29_1">
                 <label for="">Aceito receber conteúdo da Ultragaz Energia sobre produtos
                 disponíveis, via e-mail, celular e/ou Whatsapp.</label>
               </div>
@@ -205,11 +205,11 @@ function formsB() {
 </svg>
               ANTERIOR
             </a>
-            <a class="rck-next" id="rck-next-enviar">
+            <a class="rck-next" id="btnSubmit-rck-form">
               ENVIAR
               <svg fill="none" viewBox="0 0 26 25" style="height: 25px;">
-<path d="m13.05 24.637c2.4206 0 4.7869-0.7178 6.7995-2.0626 2.0127-1.3448 3.5814-3.2563 4.5077-5.4926 0.9263-2.2364 1.1687-4.6972 0.6964-7.0713-0.4722-2.3741-1.6378-4.5548-3.3495-6.2664-1.7116-1.7116-3.8923-2.8773-6.2664-3.3495-2.3741-0.47224-4.8349-0.22987-7.0713 0.69646-2.2364 0.92633-4.1478 2.495-5.4926 4.5077-1.3448 2.0127-2.0626 4.3789-2.0626 6.7995 0 3.2459 1.2894 6.3589 3.5847 8.6541 2.2952 2.2953 5.4082 3.5847 8.6542 3.5847zm-1.5776-19.215 6.9761 7.0569-6.9895 6.9088-1.7135-1.7404 5.2492-5.1917-5.2626-5.3202 1.7403-1.7134z" fill="#fff"/>
-</svg>
+              <path d="m13.05 24.637c2.4206 0 4.7869-0.7178 6.7995-2.0626 2.0127-1.3448 3.5814-3.2563 4.5077-5.4926 0.9263-2.2364 1.1687-4.6972 0.6964-7.0713-0.4722-2.3741-1.6378-4.5548-3.3495-6.2664-1.7116-1.7116-3.8923-2.8773-6.2664-3.3495-2.3741-0.47224-4.8349-0.22987-7.0713 0.69646-2.2364 0.92633-4.1478 2.495-5.4926 4.5077-1.3448 2.0127-2.0626 4.3789-2.0626 6.7995 0 3.2459 1.2894 6.3589 3.5847 8.6541 2.2952 2.2953 5.4082 3.5847 8.6542 3.5847zm-1.5776-19.215 6.9761 7.0569-6.9895 6.9088-1.7135-1.7404 5.2492-5.1917-5.2626-5.3202 1.7403-1.7134z" fill="#fff"/>
+              </svg>
             </a>
           </div>
           <p>*Atualmente disponível para os estados de GO, MG, MT, MS, PR, RS e SC. Se seu estado ainda
@@ -231,20 +231,23 @@ function formsB() {
     let inputEmail = newForm.querySelector("#wpforms-651-field_3");
     let inputTelefone = newForm.querySelector("#wpforms-651-field_35");
     
-    let inputCasa = newForm.querySelector("#wpforms-651-field_11_1");
-    let inputEmpresa = newForm.querySelector("#wpforms-651-field_11_2");
+    // casa ou empresa
+    let inputCasa = document.querySelector("#rck-Casa");
+    let inputEmpresa = document.querySelector("#rck-Empresa");
 
     let selectEstado = newFormNext.querySelector("#wpforms-651-field_34");
     let selectDistribuidora = newFormNext.querySelector("#wpforms-651-field_6");
     let selectCusto = newFormNext.querySelector("#wpforms-651-field_16");
 
-    let inputTermosDeUso = newFormNext.querySelector("#wpforms-651-field_18_1");
+    // acordos
+    let inputTermosDeUso = document.querySelector("#rck-Terms");
     let inputReceberConteudo = newFormNext.querySelector("#wpforms-651-field_29_1");
 
-    let btnSubmit = newFormNext.querySelector('#rck-next-enviar');
+    // BOTAO ENVIAR
+    var btnSubmit = document.getElementById('btnSubmit-rck-form');
+
     let originalForm = document.querySelector('form#wpforms-form-651');
-    var inputs = [inputNome, inputSobrenome, inputEmail, inputTelefone, inputCasa,
-      inputEmpresa, inputTermosDeUso, inputReceberConteudo];
+    var inputs = [inputNome, inputSobrenome, inputEmail, inputTelefone, inputCasa, inputReceberConteudo];
 
     var selects = [selectEstado, selectDistribuidora, selectCusto];
     vincularInputs(inputs, originalForm);
@@ -254,6 +257,7 @@ function formsB() {
       inputs.forEach(function (input) {
       input.addEventListener('input', function () {
         form[input.id].value = input.value;
+        console.log(input.value);
       });
       });
     }
@@ -262,6 +266,7 @@ function formsB() {
       selects.forEach(function (select) {
       select.addEventListener('change', function () {
         form[select.id].value = select.value;
+        console.log(select.value);
       });
       });
     }
@@ -306,14 +311,30 @@ function formsB() {
       document.getElementById("rck-box-form-next").style.display = "none";
       document.getElementById("rck-box-form").style.display = "flex";
     });
-    
-    btnSubmit.addEventListener('click', function () {
-      originalForm.submit();
+
+
+    // Clicks nos inputs 
+    document.querySelector("input#wpforms-651-field_11_1").click();
+    inputCasa.addEventListener('click', () =>{
+      document.querySelector("input#wpforms-651-field_11_1").click();
     });
+
+    inputEmpresa.addEventListener('click', () =>{
+      document.querySelector("input#wpforms-651-field_11_2").click();
+    });
+
+    inputTermosDeUso.addEventListener('click', () =>{
+      document.querySelector('input#wpforms-651-field_18_1').click();
+    });
+        
+    // vinculando submit
+    btnSubmit.addEventListener('click', function () {
+      document.getElementById('wpforms-submit-651').click();
+    });
+
   }
 
   document.body.classList.add("optimize");
-
   connectForms();
 }
 
