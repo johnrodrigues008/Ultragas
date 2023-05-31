@@ -51,8 +51,8 @@ function formsA() {
         <div class="rck-box-form-ass">
           <label class="wpforms-field-label" for="">Assinatura para <span class="wpforms-required-label">*</span></label>
           <div class="rck-box-form-ass-check">
-            <input type="radio" name="assinatura" id="wpforms-651-field_11_1" value="Minha casa" required checked>Minha casa
-            <input type="radio" name="assinatura" id="wpforms-651-field_11_2" value="Minha empresa" required>Minha empresa
+            <input type="radio" name="assinatura" id="rck-Casa" value="Minha casa" required checked> Minha casa
+            <input type="radio" name="assinatura" id="rck-Empresa" value="Minha empresa" required> Minha empresa
           </div>
         </div>
         <div class="rck-box-form-est">
@@ -146,17 +146,17 @@ function formsA() {
           </div>
           <div class="rck-send-terms">
             <div class="rck-send-terms-t">
-              <input type="checkbox" name="" id="wpforms-651-field_18_1" required>
+              <input type="checkbox" name="" id="rck-Terms" required>
               <label for="">Concordo com os <a href="#">Termos de Uso.</a></label>
             </div>
             <div class="rck-send-terms-act">
-              <input type="checkbox" name="" id="wpforms-651-field_29_1" required>
+              <input type="checkbox" name="" id="wpforms-651-field_29_1">
               <label for="">Aceito receber conteúdo da Ultragaz Energia sobre produtos
               disponíveis, via e-mail, celular e/ou Whatsapp.</label>
             </div>
           </div>
         </div>
-        <button type="submit" id="btnSubmit-rck-form">QUERO ECONOMIZAR</button>
+        <a type="submit" id="btnSubmit-rck-form">QUERO ECONOMIZAR</a>
         <p>*Atualmente disponível para os estados de GO, MG, MT, MS, PR, RS e SC. Se seu estado ainda
           não está na lista, avisaremos assim que o serviço estiver disponível.
         </p>
@@ -177,8 +177,8 @@ function formsA() {
     let inputTelefone = newForm.querySelector("#wpforms-651-field_35");
 
     // casa ou empresa
-    let inputCasa = newForm.querySelector("#wpforms-651-field_11_1");
-    let inputEmpresa = newForm.querySelector("#wpforms-651-field_11_2");
+    let inputCasa = newForm.querySelector("#rck-Casa");
+    let inputEmpresa = newForm.querySelector("#rck-Empresa");
 
     // local e custo
     let selectEstado = newForm.querySelector("#wpforms-651-field_34");
@@ -186,18 +186,17 @@ function formsA() {
     let selectCusto = newForm.querySelector("#wpforms-651-field_16");
 
     // acordos
-    let inputTermosDeUso = newForm.querySelector("#wpforms-651-field_18_1");
+    let inputTermosDeUso = newForm.querySelector("#rck-Terms");
     let inputReceberConteudo = newForm.querySelector("#wpforms-651-field_29_1");
 
     // BOTAO ENVIAR
-    let btnSubmit = newForm.querySelector('button');
+    let btnSubmit = newForm.querySelector('#btnSubmit-rck-form');
 
     // FORMS ORIGINAL
     let originalForm = document.querySelector('form#wpforms-form-651');
 
     // armazenando todos os inputs e selects em uma lista
-    var inputs = [inputNome, inputSobrenome, inputEmail, inputTelefone, inputCasa,
-        inputEmpresa, inputTermosDeUso, inputReceberConteudo];
+    var inputs = [inputNome, inputSobrenome, inputEmail, inputTelefone, inputTermosDeUso, inputReceberConteudo];
 
     var selects = [selectEstado, selectDistribuidora, selectCusto];
 
@@ -209,6 +208,7 @@ function formsA() {
       inputs.forEach(function (input) {
         input.addEventListener('input', function () {
           form[input.id].value = input.value;
+          console.log(input.value);
         });
       });
     }
@@ -217,9 +217,25 @@ function formsA() {
       selects.forEach(function (select) {
         select.addEventListener('change', function () {
           form[select.id].value = select.value;
+          console.log(select.value);
         });
-      });
+      }); 
     }
+
+    // Clicks nos inputs 
+    document.querySelector("input#wpforms-651-field_11_1").click();
+    inputCasa.addEventListener('click', () =>{
+      document.querySelector("input#wpforms-651-field_11_1").click();
+    });
+
+    inputEmpresa.addEventListener('click', () =>{
+      document.querySelector("input#wpforms-651-field_11_2").click();
+    });
+
+    inputTermosDeUso.addEventListener('click', () =>{
+      document.querySelector('input#wpforms-651-field_18_1').click();
+    });
+    
 
     //---- Adicionar o arquivo
     let AnexaLuz = document.querySelector('#AnexaLuz');
@@ -235,7 +251,7 @@ function formsA() {
 
     // vinculando submit
     btnSubmit.addEventListener('click', function () {
-      originalForm.submit();
+      originalForm.querySelector('#wpforms-submit-651').click();
     });
 
   }
