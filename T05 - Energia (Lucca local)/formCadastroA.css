@@ -247,6 +247,9 @@
   font-size: 20px !important;
   border: none !important;
   padding: unset !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rck-section .rck-container .rck-box-form p {
   text-align: center;
